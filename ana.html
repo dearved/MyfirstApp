@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Paint Me!</title>
+        <script src="ana.js"></script>
+        <link rel="stylesheet" href="ana.css">
+    </head>
+    <body>
+        <section>
+            <div id="draw">
+                <div id="color">
+                    <button id="red" onclick="changecolor('red')"></button>
+                     <button id="green" onclick="changecolor('green')"></button>
+                     <button id="brown" onclick="changecolor('brown')"></button>
+                     <button id="blue" onclick="changecolor('blue')"></button>
+                     <button id="black" onclick="changecolor('black')"></button>
+                </div>
+                <div id="othertools">
+                    <button id="clear" onclick="clearcanvas()">C</button>
+                    <button id="brushsize1" onclick="changebrushsize(5)">1</button>
+                    <button id="brushsize2" onclick="changebrushsize(10)">2</button>
+                    <button id="brushsize3" onclick="changebrushsize(15)">3</button>
+                    <button id="brushsize4" onclick="changebrushsize(20)">4</button><br>
+                    <button id="fillcanvas" onclick="fillcanvas()">F</button>
+                    <button id="buttbrush" onclick="changebrushstyle('butt')">Butt</button>
+                    <button id="squarebrush" onclick="changebrushstyle('square')">Square</button>
+                    <button id="roundbrush" onclick="changebrushstyle('round')">Round</button>
+                    <button id="openFile" onclick="triggerClick()">Open</button>
+            </div>
+            <canvas id="canvas" width="800" height="500"></canvas>
+            <input id="file" type="file" accept="image/*" />
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="ana.js"></script>
+    </body>
+
+</html>
